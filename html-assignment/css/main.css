@@ -1,4 +1,19 @@
-/* This is a test */
-html {
-    background-color: orange;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+header,
+footer {
+    background-color: lightskyblue;
+}
+
+.site-title {
+    color: orange;
+}
+
+#my-image {
+    box-shadow: 0 0 2px 1px black;
+    height: 650px;
+    width: 500px;
 }
