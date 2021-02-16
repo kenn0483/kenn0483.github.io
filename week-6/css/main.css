@@ -1,8 +1,20 @@
 /* Command + / to add a comment block */
+
+html {
+    font-size: 16px;
+
+}
+
 body {
     /* !important will overwrite the cascading effect */
     color: darkslategray !important;
     font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../images/white_brick_wall.png");
+
+    /* background-repeat: no-repeat; */
+    /* x-axis y-axis */
+    /* background-position: 100px 200px; */
+    /* background-size: cover; */
 }
 
 /* cascading */
@@ -38,6 +50,9 @@ nav ul {
 nav ul a {
     color: darkslategray;
     text-decoration: none;
+    /* rem is root element's(html tag) font size */
+    font-size: 1.5rem;
+    /* 1.5 x 16 = 24px */
 }
 
 /* class name selector */
@@ -52,13 +67,30 @@ nav ul a {
 /* Specificity: 0100 */
 /* id selector */
 #treatofweek {
-    background-color: orange;
+    /* background-color: orange; */
+    /* color image repeat */
+    background: darkslategray url("../images/bread.jpg") no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    font-size: 1.5rem;
+    /* 1.5 rem x 16 = 24px */
+    /* em is for element's font size */
+    padding: 1em;
+    /* 1 x 1.5rem = 1 x 1.5 x 16px = 24px */
+    width: 50%;
+}
+
+/* overwriting the background-color for nth-child list items */
+/* 0103 */
+#treatofweek dl ul li {
+    background-color: transparent;
 }
 
 /* Avoid using id for styling, use classes mostly */
 
 .large-text {
-    font-size: 20px;
+    font-size: 1.25rem;
+    /* 1.25 x 16px = 20px */
 }
 
 /* Child selector or Direct Child selector */
