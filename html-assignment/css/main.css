@@ -9,11 +9,35 @@ footer {
 }
 
 .site-title {
-    color: orange;
+    color: darkorange;
 }
 
 #my-image {
     box-shadow: 0 0 2px 1px black;
     height: 650px;
     width: 500px;
+}
+
+#myhobbies {
+    list-style: square;
+}
+
+section ol li:nth-child(2n+1) {
+    background-color: orange;
+}
+
+nav ol {
+    list-style: none;
+}
+
+nav ol a {
+    background-color: orange;
+    text-decoration: none;
+    border-style: groove;
+    border-color: red;
+}
+
+nav ol a:hover,
+nav ol a:focus {
+    background-color: lightcoral;
 }
