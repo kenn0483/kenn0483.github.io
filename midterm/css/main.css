@@ -1,0 +1,309 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* My own CSS starts here */
+
+body {
+	background-color: #d4e8e7;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+	font-size: 0.9rem;
+	/* This adds the blue bars around the content on the left, right, and the bottom. */
+	border-left: 150px solid #aad4cf;
+	border-right: 150px solid #aad4cf;
+	border-bottom: 10px solid #aad4cf;
+
+}
+
+/* This controls the web page header text, Lone Starfish. */
+h1 {
+	/* Makes header font size, 4.2 rem. */
+	font-size: 4.2rem;
+	color: white;
+	padding: 30px;
+	position: absolute;
+	display: inline;
+	left: 300px;
+	top: 110px;
+	bottom: 660px;
+
+}
+
+/* This is for the image used in the web pages header */
+.header-image {
+	display: inline-block;
+	width: 714px;
+
+
+}
+
+/* This controls both h2 headers on this web page.  */
+
+h2 {
+	font-size: 2.1rem;
+	padding: 10px;
+	padding-bottom: 5px;
+}
+
+/* This is for the header above the form */
+#contact-h3 {
+	font-size: 1.6rem;
+	margin-top: 15px;
+	padding: 10px;
+
+}
+
+/* This is for the header above the list of facts about starfish.  */
+#starfish-h3 {
+	font-size: 1.6rem;
+	margin-top: 30px;
+	padding: 10px;
+
+}
+
+h4 {
+	font-size: 1.1rem;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-bottom: 20px;
+
+}
+
+/* This targets all the li tags in the nav. */
+nav ul li {
+	font-size: 1.5rem;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+	margin-right: 70px;
+	margin-left: 15px;
+	display: inline-block;
+	width: 100px;
+	left: 20px;
+}
+
+/* This targets just the home li tag */
+#home {
+	border-right: 1px solid black;
+	margin-top: 2px;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+/* This targets just the story li tag */
+
+#story {
+	border-right: 1px solid black;
+	margin-top: 2px;
+	padding-right: 40px;
+}
+
+/* This controls the copyright symbol and text in the footer */
+#copy-right {
+	text-align: right;
+	padding: 25px;
+}
+
+/* Image with text wrapping around it. */
+.article-image {
+	padding: 10px;
+	width: 220px;
+	height: 220px;
+	float: left;
+}
+
+#main-artice {
+	padding-left: 15px;
+	margin-left: 10px;
+	width: 60%;
+
+}
+
+/* This is for the facts about starfish list. */
+.starfish-list {
+	padding-left: 30px;
+	list-style-type: disc;
+	display: block;
+}
+
+.contact-info {
+	/* Adding a border around all the form elements */
+	border: 1px solid black;
+	padding: 10px;
+	box-sizing: border-box;
+	display: inline-block;
+	width: 690px;
+	height: 420px;
+	margin-left: 10px;
+	position: relative;
+}
+
+/* Controls the top two input fields. */
+#yourname,
+#youremail {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	width: 660px;
+	display: block;
+}
+
+/* Controls the radio buttons */
+#yes,
+#no,
+#maybe {
+	border-bottom: 20px;
+	margin-right: 10px;
+}
+
+/* Controls the text area */
+#yourmessage {
+	width: 660px;
+	height: 80px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	display: block;
+}
+
+#send-button {
+	margin-top: 15px;
+	border: 1px solid black;
+	background-color: transparent;
+	padding: 8px;
+
+}
