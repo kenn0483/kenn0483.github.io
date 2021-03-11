@@ -3,48 +3,135 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 /* --------------- CSS RESET --------------- */
@@ -59,7 +146,8 @@ body {
     line-height: 1.5;
 }
 
-h1,h2 {
+h1,
+h2 {
     font-weight: bold;
     /* top left-right bottom */
     margin-top: 1em 0 0.5rem;
@@ -74,7 +162,7 @@ h2 {
 }
 
 p {
-    margin:  1rem 0;
+    margin: 1rem 0;
 }
 
 .clearfix::after {
@@ -98,16 +186,16 @@ p {
 
 .banner {
     height: 600px;
-    background: grey url("../img/mobile-banner.jpg") no-repeat center bottom ;
+    background: grey url("../img/mobile-banner.jpg") no-repeat center bottom;
     background-size: cover;
-     
+
 }
 
 .banner h1 {
     margin: 0;
     padding-top: 250px;
     text-align: center;
-    text-transform: uppercase; 
+    text-transform: uppercase;
 }
 
 /* Main */
@@ -158,6 +246,7 @@ footer a:hover {
     html {
         font-size: 16px;
     }
+
     .mobile-logo {
         display: none;
     }
@@ -166,9 +255,11 @@ footer a:hover {
         display: inline-block;
         max-width: 300px;
     }
+
     .banner {
         background-image: url("../img/desktop-banner.jpg");
     }
+
     .banner h1 {
         color: #fff;
     }
@@ -181,11 +272,9 @@ footer a:hover {
         margin-right: 1rem;
 
     }
+
     .app .btn {
         float: right;
     }
 
-    }
-
-
-
+}
