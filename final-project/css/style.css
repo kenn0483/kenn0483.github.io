@@ -1,0 +1,206 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/********** My own CSS starts here **********/
+
+/* Site container */
+.container {
+    max-width: 1200px;
+}
+
+/* Setting the web sites font to "Open Sans" */
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+
+/* CSS controling the site header */
+.site-header {
+    background-color: #222;
+    padding: 15px;
+}
+
+/* Image with three stars in it at the top of the page */
+.company-logo {
+    width: 150px;
+    border-right: 845px solid #c78c06;
+    border-bottom: 90px solid #c78c06;
+    display: inline-block;
+    
+}
+
+/*.site-nav ul li {
+
+}   */
+
+.site-nav ul li a {
+    text-decoration: none;
+    padding: 0;
+    margin-bottom: 40px;
+    display: block;
+    color: #c78c06;
+    
+    
+}
+
+.nav-list {
+    padding-left: 500px;
+}
+
+.home-nav {
+    display: inline;
+    position: relative;
+    padding-bottom: 60px;
+}
+
+
+/* Id for styling the search bar in the nav */
+#search {
+    height: 35px;
+    width: 940px;
+    padding-left: 4px;
+    margin-left: 4px;
+    margin-bottom: 4px;
+}
+
+/* class for styling the search button in the nav */
+.btn {
+    color: #c78c06;
+    border: 0.2px solid #c78c06;
+    padding-bottom: 10px;
+    padding-top: 7px;
+    padding-left: 8px;
+    padding-right: 8px;
+
+
+}
+
+::placeholder {
+    font-size: 1rem;
+    font-weight: 300;
+    color: rgb(79, 79, 79);
+}
+
+.main-banner {
+    width: 1029px;
+   
+}
+
+h1 {
+    font-size: 4.6rem;
+    font-weight: 700;
+    color: #fff;
+    display: inline;
+    position: absolute;
+    padding: 20px;
+    line-height: 110px;
+    bottom: 20px;
+
+}
+
+.about-us-h2 {
+    position: absolute;
+    top: 1910px; /* will look at as to why numbers soooo big. may change */
+    padding: 20px;
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+
+.welcome-text {
+    position: absolute;
+    color: #fff;
+    display: inline;
+    bottom: 20px; /* may get rid of or change (may not be nessesary). */
+    top: 920px;
+    padding: 20px;
+    padding-right: 220px;
+    line-height: 25px;
+    
+}
+
+.connect-withUs {
+    font-size: 1.5rem;
+    position: absolute;
+    display: inline;
+    background-color: #c78c06;
+    height: 100px;
+    width: 260px;
+    margin: 20px;
+    bottom: 20px; /* may get rid of or change (may not be nessesary). */
+    top: 985px;
+    border: none;
+}
+
+.about-us-image {
+    width: 990px;
+    height: 500;
+    padding-top: 0;
+    border: 20px solid #ffe6ac;
+    border-bottom: 280px solid #ffe6ac;
+
+}
+
+.about-us-p1 { /* may make into id? */
+    position: absolute;
+    top: 2000px;
+    padding: 20px; /* may change to margin? */
+    line-height: 25px;
+       
+}
+
+.about-us-p2 { /* may make into id? */
+    position: absolute;
+    top: 2070px;
+    padding: 20px; /* may change to margin? */
+    line-height: 25px;
+       
+}
+

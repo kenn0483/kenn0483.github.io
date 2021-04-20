@@ -9,6 +9,13 @@
     <title>Three Star Media</title>
     <!-- Link tag connecting the html file to the css file. -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Space reserved for font awesome script tag -->
+    <script src="https://kit.fontawesome.com/bb0515a43c.js" crossorigin="anonymous"></script>
+    <!-- Google "Open Sans" fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+
 </head>
 <!-- This is the body of the website -->
 
@@ -21,7 +28,7 @@
                 <nav class="site-nav">
                     <!-- List of Navigation links -->
                     <ul class="nav-list">
-                        <li><a href="index.html">Home</a></li>
+                        <li class="home-nav"><a href="index.html">Home</a></li>
                         <li><a href="about-us.html">About Us</a></li>
                         <li><a href="services.html">Services</a></li>
                         <li><a href="team.html">Team</a></li>
@@ -30,17 +37,18 @@
                     <!-- Div that contains the sites search bar -->
                     <div class="search-bar">
                         <input type="text" id="search" name="search" placeholder="Search">
+                        <a class="btn" href=""><i class="fas fa-search fa-lg"></i></a>
                     </div>
                 </nav>
             </div>
             <!-- Website header -->
         </header>
-        <div class=hero-banner> 
+        <div class=hero-banner>
             <img class="main-banner" src="images/main-banner.jpg" alt="Main banner image">
             <div>
                 <!-- Website main header text -->
                 <h1> Welcome to Three Star Media</h1>
-                <p>
+                <p class="welcome-text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit, lacus et finibus condimentum,
                     nulla leo dapibus justo, eget vulputate erat ipsum vitae ante. Sed pretium pharetra orci id aliquam.
                     Mauris.
@@ -60,13 +68,13 @@
                     <div>
                         <img class="about-us-image" src="images/about-us.jpg" alt="About us section image">
                     </div>
-                    <h2>About us</h2>
-                    <p>
+                    <h2 class="about-us-h2">About Us</h2>
+                    <p class="about-us-p1">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse cursus, nisl ut finibus
                         accumsan, magna ipsum blandit ligula, vulputate tempor magna velit et velit. Duis et purus
                         eget quam dignissim bibendum.
                     </p>
-                    <p>
+                    <p class="about-us-p2">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis gravida lacinia risus non
                         tristique.
                         Nulla eros nisl, suscipit a eleifend eu, sodales pharetra nisl. Nunc tincidunt interdum auctor.
