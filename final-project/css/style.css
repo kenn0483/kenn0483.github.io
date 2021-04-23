@@ -270,7 +270,7 @@ h1 {
 
 .about-us-image {
     width: 990px;
-    height: 500;
+    height: 500px;
     padding-top: 0;
     border: 20px solid #ffe6ac;
     border-bottom: 285px solid #ffe6ac;
@@ -472,4 +472,48 @@ h1 {
     background-color: #222;
     left: 42px;
     bottom: -6210px;
+}
+
+/********** Our Vision Section **********/
+
+
+/* Background image of the "Our Vision section */
+.vision-image {
+    width: 1030px;
+    height: 550px;
+    margin-top: 25px;
+
+}
+
+.our-vision-h3 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    position: absolute;
+    margin: 20px;
+    padding-left: 20px;
+    top: 7300px;
+    color: #fff;
+}
+
+/* p tag "Our Vision" area, text */
+.our-vision-text {
+    position: absolute;
+    margin: 20px;
+    top: 7500px;
+    color: #fff;
+    line-height: 25px;
+}
+
+/* button at the bottom of the Our Vision section. */
+.learn-more-btn {
+    font-size: 1.5rem;
+    position: absolute;
+    display: inline;
+    background-color: rgb(21, 21, 69);
+    color: #fff;
+    height: 100px;
+    width: 220px;
+    margin: 20px;
+    top: 7600px;
+    border: 1px solid #c78c06;
 }
