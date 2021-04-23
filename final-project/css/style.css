@@ -3,48 +3,135 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 /********** My own CSS starts here **********/
@@ -60,6 +147,7 @@ body {
     font-weight: 400;
 }
 
+/********** Site Nav Section **********/
 
 /* CSS controling the site header */
 .site-header {
@@ -73,12 +161,8 @@ body {
     border-right: 845px solid #c78c06;
     border-bottom: 90px solid #c78c06;
     display: inline-block;
-    
+
 }
-
-/*.site-nav ul li {
-
-}   */
 
 .site-nav ul li a {
     text-decoration: none;
@@ -86,10 +170,11 @@ body {
     margin-bottom: 40px;
     display: block;
     color: #c78c06;
-    
-    
+
+
 }
 
+/* Navigation list containing links to other pages. */
 .nav-list {
     padding-left: 500px;
 }
@@ -122,15 +207,17 @@ body {
 
 }
 
+/* "Search", placeholder text next to the search bar in the nav area.  */
 ::placeholder {
     font-size: 1rem;
     font-weight: 300;
     color: rgb(79, 79, 79);
 }
 
+/********** Site Header Section **********/
 .main-banner {
     width: 1029px;
-   
+
 }
 
 h1 {
@@ -147,7 +234,7 @@ h1 {
 
 .about-us-h2 {
     position: absolute;
-    top: 1910px; /* will look at as to why numbers soooo big. may change */
+    top: 1910px;
     padding: 20px;
     font-size: 3.2rem;
     font-weight: 700;
@@ -158,12 +245,12 @@ h1 {
     position: absolute;
     color: #fff;
     display: inline;
-    bottom: 20px; /* may get rid of or change (may not be nessesary). */
+    bottom: 20px;
     top: 920px;
     padding: 20px;
     padding-right: 220px;
     line-height: 25px;
-    
+
 }
 
 .connect-withUs {
@@ -174,33 +261,215 @@ h1 {
     height: 100px;
     width: 260px;
     margin: 20px;
-    bottom: 20px; /* may get rid of or change (may not be nessesary). */
+    bottom: 20px;
     top: 985px;
     border: none;
 }
+
+/********** About Us Section **********/
 
 .about-us-image {
     width: 990px;
     height: 500;
     padding-top: 0;
     border: 20px solid #ffe6ac;
-    border-bottom: 280px solid #ffe6ac;
+    border-bottom: 285px solid #ffe6ac;
 
 }
 
-.about-us-p1 { /* may make into id? */
+/* First paragraph of text in the "About Us" section */
+.about-us-p1 {
     position: absolute;
     top: 2000px;
-    padding: 20px; /* may change to margin? */
+    margin: 20px;
     line-height: 25px;
-       
+
 }
 
-.about-us-p2 { /* may make into id? */
+/* Second paragraph of text in the "About Us" section */
+.about-us-p2 {
     position: absolute;
     top: 2070px;
-    padding: 20px; /* may change to margin? */
+    padding-bottom: 10px;
+    margin: 20px;
     line-height: 25px;
-       
+
 }
 
+/********** Our Services Section **********/
+
+/* Our Services */
+.service-h2 {
+    top: 1910px;
+    padding-bottom: 10px;
+    padding-top: 25px;
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.our-services {
+    padding: 20px;
+}
+
+/* h3 tag "Digital Transformation" */
+.digital-transformation {
+    font-size: 2.4rem;
+    font-weight: 700;
+    position: absolute;
+    top: 2950px;
+    margin: 20px;
+    padding-top: 35px;
+}
+
+/* h3 tag "Marketing" */
+.marketing {
+    font-size: 2.4rem;
+    font-weight: 700;
+    position: absolute;
+    top: 3930px;
+    margin: 20px;
+    padding-top: 35px;
+}
+
+/* h3 tag "Video Production" */
+.video-production {
+    font-size: 2.4rem;
+    font-weight: 700;
+    position: absolute;
+    top: 4910px;
+    margin: 20px;
+    padding-top: 35px;
+}
+
+/* h3 tag "Web Development" */
+.web-development {
+    font-size: 2.4rem;
+    font-weight: 700;
+    position: absolute;
+    top: 5890px;
+    margin: 20px;
+    padding-top: 35px;
+}
+
+/* h3 tag "Print" */
+.print {
+    font-size: 2.4rem;
+    font-weight: 700;
+    position: absolute;
+    top: 6865px;
+    margin: 20px;
+    padding-top: 35px;
+}
+
+/* Image alignment, resizing, and borders */
+.digital-image,
+.marketing-image,
+.video-image,
+.web-image,
+.print-image {
+    width: 988px;
+    padding-top: 20px;
+    border-bottom: 300px solid #ffe6ac;
+
+}
+
+
+/*  p tag "Digital Transformation" area, text */
+#digital-text {
+    position: absolute;
+    top: 3050px;
+    margin: 20px;
+    line-height: 25px;
+}
+
+/* p tag "Marketing" area, text */
+#marketing-text {
+    position: absolute;
+    top: 4030px;
+    margin: 20px;
+    line-height: 25px;
+}
+
+/*  p tag "Video Production" area, text */
+#video-text {
+    position: absolute;
+    top: 5005px;
+    margin: 20px;
+    line-height: 25px;
+}
+
+/* p tag "Web Development" area, text */
+#web-text {
+    position: absolute;
+    top: 5980px;
+    margin: 20px;
+    line-height: 25px;
+}
+
+/* p tag "Print" area, text */
+#print-text {
+    position: absolute;
+    top: 6970px;
+    margin: 20px;
+    line-height: 25px;
+}
+
+/* Button under "Digital Transformation". */
+.digital-plans {
+    font-size: 1.5rem;
+    position: absolute;
+    display: inline;
+    background-color: #222;
+    color: #fff;
+    padding: 35px;
+    left: 42px;
+    bottom: -2275px;
+}
+
+/* Button under "Marketing". */
+.marketing-plans {
+    font-size: 1.5rem;
+    position: absolute;
+    display: inline;
+    color: #fff;
+    padding: 35px;
+    background-color: #222;
+    left: 42px;
+    bottom: -3263px;
+}
+
+/* Button under "Video Production". */
+.video-plans {
+    font-size: 1.5rem;
+    position: absolute;
+    display: inline;
+    color: #fff;
+    padding: 30px;
+    background-color: #222;
+    left: 42px;
+    bottom: -4250px;
+}
+
+/* Button under "Web Development". */
+.web-plans {
+    font-size: 1.5rem;
+    position: absolute;
+    display: inline;
+    color: #fff;
+    padding: 30px;
+    background-color: #222;
+    left: 42px;
+    bottom: -5225px;
+}
+
+/* Button under "Print". */
+.print-plans {
+    font-size: 1.5rem;
+    position: absolute;
+    display: inline;
+    color: #fff;
+    padding: 30px;
+    background-color: #222;
+    left: 42px;
+    bottom: -6210px;
+}
