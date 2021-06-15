@@ -1,0 +1,329 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*************** My own CSS starts here !!! ***************/
+
+body {
+    background-color: #f7f7ff;
+
+}
+
+main {
+    background-image: url(../images/scooter.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* This h1 tag displays the header for this web page. For my h1, For the header, I chose to use a font size of 3.5rem. I believe this 
+is the optimal font size for the header without being too big overall. */
+h1 {
+    font-size: 3.5rem;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-weight: 600;
+}
+
+h2 {
+    display: block;
+    font-size: 2rem;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+
+}
+
+/* This class is in charge for styling the company logo. I chose the width and height to be 120px because it is a good size for the
+logo to start at while in the mobile layout. */
+.company-logo {
+    padding: 20px;
+    width: 120px;
+    height: 120px;
+
+}
+
+h1,
+h2,
+#start-today,
+.enter-info {
+    color: #333131;
+}
+
+.enter-info {
+    padding-left: 27px;
+    font-weight: 300;
+}
+
+/* This is the styling for the text under the header. I chose to use a font weight of 300 as it looked the closest to that in the example. */
+#start-today {
+    padding: 10px;
+    font-size: 1.4rem;
+    margin-left: 30px;
+    font-weight: 300;
+
+}
+
+.scooter-image {
+    padding: 20px;
+    width: 350px;
+    height: 350px;
+}
+
+/* This is the styling for the white area surrounding the "Apply Now" form. I have used a border radius of 30px in order to get the corners of the form
+rounded enough to match the example. */
+.apply-now-section {
+    border-color: black;
+    background-color: #fff;
+    margin-bottom: 80px;
+    border-radius: 30px;
+    width: 240px;
+    filter: drop-shadow(0 0 0.75rem #333131);
+}
+
+.apply-now-form {
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.submit-button {
+    margin: 10px;
+    padding: 0.7rem;
+    font-size: 1.2rem;
+    background-color: #57eeab;
+    border-radius: 10px;
+    border-style: none;
+    font-weight: 600;
+}
+
+#application-status {
+    font-weight: 300;
+}
+
+.already-applied {
+    font-weight: 300;
+}
+
+/* This is the styling for the "calculate" button at the bottom of the form. I have chosen to use the "border-color" property with all rgba values set to 0 as 
+an alternate method in order to remove the black border around this button. */
+.calculate-button {
+    margin: 10px;
+    width: 300px;
+    padding: 0.4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1.4rem;
+    color: #fff;
+    background-color: #ff8480;
+    border-radius: 10px;
+    border-color: rgba(0, 0, 0, 0);
+    font-weight: 600;
+
+}
+
+#first-name,
+#last-name,
+#email-address,
+#phone-number {
+    padding: 8px;
+    margin: 5px;
+    border-radius: 10px;
+    border-color: rgba(0, 0, 0, 0);
+    background-color: #f4f4f5;
+}
+
+
+#hours {
+    padding: 8px;
+    margin: 5px;
+    border-radius: 10px;
+    border-color: rgba(0, 0, 0, 0);
+    background-color: #f7f7ff;
+    float: left;
+    width: 35px;
+
+}
+
+#city {
+    padding: 8px;
+    margin: 5px;
+    border-radius: 10px;
+    border-color: rgba(0, 0, 0, 0);
+    background-color: #f7f7ff;
+    float: left;
+}
+
+#application-status {
+    color: #ff8480;
+    text-decoration: none;
+}
+
+.much-earn-dash {
+    padding: 20px;
+    padding-left: 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.many-hours {
+    padding: 2px;
+    padding-left: 30px;
+    font-weight: 200;
+}
+
+/* This is the styling for the check box and its label in the "Apply now" form. I used the property, float left to move the checkbox from the right to the left side of the label */
+#dash-terms {
+    float: left
+}
+
+.facebook-logo,
+.instagram-logo,
+.twitter-logo,
+.linkedin-logo {
+    padding: 20px;
+}
+
+footer {
+    background-color: #fffd8c;
+}
+
+@media screen and (min-width: 800px) {
+    main {
+        display: flex;
+    }
+}

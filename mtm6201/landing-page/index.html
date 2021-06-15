@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="X">
+        <!-- This is the image tag that displays the companies logo. I have chosen to use the png version of the 
+        logo because im used to using them and they are easy to use. -->
+        <img src="images/logo.png" class="company-logo" alt="An image of the companies logo">
+    </header>
+    <main>
+        <section class="start-section">
+            <h1>Want to be your own boss?</h1>
+            <p id="start-today">Start today and make uo to $30/hr driving your own vehicle with Dash!</p>
+        </section>
+        <section class="apply-now-section">
+            <h2>Apply Now</h2>
+            <p class="enter-info">Enter you info below.</p>
+            <form class="apply-now-form" action="apply.html" method="get">
+                <div>
+                    <label for="first-name">
+                        <!--First name--></label>
+                    <input id="first-name" type="text" name="first-name" placeholder="First name">
+                </div>
+                <div>
+                    <label for="last-name">
+                        <!--Last name--></label>
+                    <!-- This is the input tag which creates an input field for inputting your last name on the form. I choose to use this in order
+                    to provide a space to enter your last name.  -->
+                    <input id="last-name" type="text" name="last-name" placeholder="Last name">
+                </div>
+                <div>
+                    <label for="phone-number">
+                        <!--Phone number--></label>
+                    <input id="phone-number" type="text" name="phone-number" placeholder="Phone number">
+                </div>
+                <div>
+                    <!-- This is a label tag. It displays the text you see next to or above an input field. Although not nessesary for this 
+                    assignment, I used it because it is good practice to include it as it is an important part of any HTML form. -->
+                    <label for="email-address">
+                        <!--Phone number--></label>
+                    <input id="email-address" type="text" name="email-address" placeholder="Email Address">
+                </div>
+                <div>
+                    <label for="dash-terms">I agree to dash terms</label>
+                    <input type="checkbox" id="dash-terms" name="dash-terms" value="">
+                </div>
+                <!-- This is a button tag. Setting the type as submit will make this button a submit button. 
+                I chose to use this because every form needs a submit button. -->
+                <button class="submit-button" type="submit">DRIVE WITH US</button>
+                <p class="already-applied">Already applied? <a href="X" id="application-status">Check your application
+                        status here</a></p>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p class="much-earn-dash">See how much you can earn with Dash.</p>
+        <p class="many-hours">how many hours do you want to drive with us this week?</p>
+        <form class="calculate-form" action="calculate.html" method="get">
+            <div>
+                <input id="hours" type="text" name="hours" placeholder="Hours">
+            </div>
+            <div>
+                <input id="city" type="text" name="city" placeholder="City">
+            </div>
+            <button class="calculate-button" type="submit">CALCULATE</button>
+        </form>
+        <img class="facebook-logo" src="images/facebook.svg" alt="Facebook logo">
+        <img class="instagram-logo" src="images/instagram.svg" alt="Instagram logo">
+        <img class="twitter-logo" src="images/twitter.svg" alt="Twitter logo">
+        <img class="linkedin-logo" src="images/linkedin.svg" alt="Linkedin logo">
+    </footer>
+</body>
+
+</html>
