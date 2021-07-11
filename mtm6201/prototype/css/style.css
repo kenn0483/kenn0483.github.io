@@ -153,13 +153,16 @@ header {
 }
 
 h1 {
+	font-family: s;
 	font-size: 3.4rem;
+	padding: 20px;
+	display: none;
 }
 
 h2 {
 	font-size: 2.1rem;
 	text-align: center;
-	padding: 30px;
+	padding: 50px;
 	/* Will change to europa regular later or another font */
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: 800;
@@ -176,17 +179,51 @@ h3 {
 
 }
 
+h5 {
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	padding: 20px;
+	font-weight: 400;
+	letter-spacing: 1.4px;
+	font-size: 0.8rem;
+}
+
 nav ul li a {
 	text-decoration: none;
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: 400;
 	color: black;
+	font-size: 1.4rem;
+	border-left: 90px;
+
+}
+
+nav ul li a:hover {
+	color: yellow;
 }
 
 .page-links {
-	padding: 20px;
-	line-height: 60px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-top: 220px;
+	line-height: 50px;
 	text-align: center;
+	width: 485px;
+
+}
+
+.home-link,
+.about-us-link,
+.contact-link,
+.faq {
+	border-bottom: 2px solid #707070;
+	padding-bottom: 2px;
+	padding-top: 2px;
+	background-color: #00AEEF;
+
+}
+
+.home-link {
+	padding-top: 8px;
 }
 
 /* May remove the id from the footer since there is only one footer. */
@@ -196,23 +233,79 @@ nav ul li a {
 
 .shopping-cart {
 	width: 60px;
+	padding: 10px;
 	height: 60px;
+	position: absolute;
+	right: 40px;
+	top: 65px;
 }
 
 .moodatorium-logo {
-	width: 180px;
-	height: 180px;
+	padding-bottom: 20px;
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	right: 145px;
+	top: 5px;
+
 
 }
 
 #search-field {
 	border-radius: 12px;
 	border-width: 2px;
-	border-color: #5D5D5D;
-	padding: 5px;
+	border-color: #707070;
+	padding: 7px;
 	margin: 15px;
-	width: 290px;
+	width: 410px;
+	position: absolute;
+	top: 170px;
+	left: 10px;
+
 }
+
+.fas {
+	padding: 20px;
+	color: #707070;
+	position: absolute;
+	top: 175px;
+	left: 395px;
+
+}
+
+#banana-image,
+#grape-image,
+#pineapple-image,
+#walnut-image,
+#watermelon-image,
+#orange-image {
+	padding-right: 250px;
+	width: 250px;
+	height: 270px;
+
+}
+
+#mango-image,
+#apple-image,
+#strawberry-image,
+#raspberry-image,
+#lime-image,
+#peach-image {
+	padding-left: 230px;
+	width: 250px;
+	height: 270px;
+
+}
+
+.flavours-section {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+
+
+}
+
+
 
 .contact-info {
 	padding: 50px;
