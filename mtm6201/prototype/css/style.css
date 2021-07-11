@@ -1,0 +1,302 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*************** My own CSS starts here **********/
+
+/*body {
+
+}*/
+
+main {
+	background-color: #B86BAC;
+}
+
+/*html {
+
+}*/
+
+header {
+	background-color: #2AE22A;
+}
+
+h1 {
+	font-size: 3.4rem;
+}
+
+h2 {
+	font-size: 2.1rem;
+	text-align: center;
+	padding: 30px;
+	/* Will change to europa regular later or another font */
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 800;
+	letter-spacing: 1.5px;
+}
+
+h3 {
+	font-size: 1rem;
+	text-align: left;
+	padding: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 600;
+	letter-spacing: 1.5px;
+
+}
+
+nav ul li a {
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 400;
+	color: black;
+}
+
+.page-links {
+	padding: 20px;
+	line-height: 60px;
+	text-align: center;
+}
+
+/* May remove the id from the footer since there is only one footer. */
+#site-footer {
+	background-color: #A0A0A0;
+}
+
+.shopping-cart {
+	width: 60px;
+	height: 60px;
+}
+
+.moodatorium-logo {
+	width: 180px;
+	height: 180px;
+
+}
+
+#search-field {
+	border-radius: 12px;
+	border-width: 2px;
+	border-color: #5D5D5D;
+	padding: 5px;
+	margin: 15px;
+	width: 290px;
+}
+
+.contact-info {
+	padding: 50px;
+
+
+}
+
+.our-mission-image,
+.our-vision-image {
+	width: 445px;
+	height: 280px;
+	padding: 20px;
+}
+
+.mission-text,
+.vision-text {
+	padding: 20px;
+}
+
+.learn-more-button {
+	margin: 20px;
+	padding: 8px;
+	width: 100px;
+}
+
+.samantha-thompson,
+.micheal-higgins,
+.robert-johnson {
+	width: 445px;
+	height: 280px;
+	padding: 20px;
+}
+
+#about-samantha,
+#about-micheal,
+#about-robert {
+	padding: 20px;
+}
+
+#yourname,
+#youremail,
+#thesubject {
+	width: 375px;
+	height: 20px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+#yourmessage {
+	width: 375px;
+	height: 120px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+#submit-button {
+	padding: 8px;
+	width: 100px;
+}
+
+#site-footer {
+	text-align: center;
+	display: flex;
+	padding: 15px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 400;
+}
+
+#copyright-line {
+	padding: 17px;
+	font-size: 0.75rem;
+
+}
+
+.facebook-icon,
+.twitter-icon,
+.instagram-icon {
+	width: 30px;
+	height: 30px;
+	padding: 8px;
+}
+
+.youtube-icon {
+	width: 43px;
+	height: 30px;
+	padding: 8px;
+}
