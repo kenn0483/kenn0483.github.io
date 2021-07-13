@@ -136,17 +136,10 @@ table {
 
 /*************** My own CSS starts here **********/
 
-/*body {
-
-}*/
-
 main {
 	background-color: #B86BAC;
+	font-family: Arial, Helvetica, sans-serif;
 }
-
-/*html {
-
-}*/
 
 header {
 	background-color: #2AE22A;
@@ -163,8 +156,6 @@ h2 {
 	font-size: 2.1rem;
 	text-align: center;
 	padding: 50px;
-	/* Will change to europa regular later or another font */
-	font-family: Arial, Helvetica, sans-serif;
 	font-weight: 800;
 	letter-spacing: 1.5px;
 }
@@ -173,7 +164,6 @@ h3 {
 	font-size: 1rem;
 	text-align: left;
 	padding: 20px;
-	font-family: Arial, Helvetica, sans-serif;
 	font-weight: 600;
 	letter-spacing: 1.5px;
 
@@ -187,6 +177,8 @@ h5 {
 	font-size: 0.8rem;
 }
 
+/* The nav ul li a controls the styling of the links in the sites nav bar. I did this in order to be able to properly adjust the padding,
+font, font size etc. of the nav links */
 nav ul li a {
 	text-decoration: none;
 	font-family: Arial, Helvetica, sans-serif;
@@ -194,11 +186,19 @@ nav ul li a {
 	color: black;
 	font-size: 1.4rem;
 	border-left: 90px;
+	transition-property: all;
+	transition-duration: 0.25s;
+	transition-timing-function: ease-in-out;
+	transition-delay: 0s;
+
 
 }
 
+/* This is a hover pseudo class which I used on the the links in the sites nav bar. I used this as a way to alert the 
+user of what page he/she is on by turning the link white when his/her mouse hovers over it. */
 nav ul li a:hover {
-	color: yellow;
+	color: white;
+
 }
 
 .page-links {
@@ -211,6 +211,8 @@ nav ul li a:hover {
 
 }
 
+/* This css code tagets all the nav links. I did this in order to create borders (the lines between each nav link) seperating each link
+just like in the XD mockup */
 .home-link,
 .about-us-link,
 .contact-link,
@@ -224,11 +226,6 @@ nav ul li a:hover {
 
 .home-link {
 	padding-top: 8px;
-}
-
-/* May remove the id from the footer since there is only one footer. */
-#site-footer {
-	background-color: #A0A0A0;
 }
 
 .shopping-cart {
@@ -264,6 +261,8 @@ nav ul li a:hover {
 
 }
 
+/* This bit of CSS code controls the "magnifying glass" search button in the search bar. I chose to include this 
+in order to specify the position, padding, and color of the search button. */
 .fas {
 	padding: 20px;
 	color: #707070;
@@ -273,12 +272,15 @@ nav ul li a:hover {
 
 }
 
+/* The following two sections of css code targets the entire section on the homepage containing the ice-cream cone images.
+I have decided to use margin and padding properties for this section as a way to properly align all the images together. */
 #banana-image,
 #grape-image,
 #pineapple-image,
 #walnut-image,
 #watermelon-image,
 #orange-image {
+	margin-bottom: -260px;
 	padding-right: 250px;
 	width: 250px;
 	height: 270px;
@@ -291,32 +293,37 @@ nav ul li a:hover {
 #raspberry-image,
 #lime-image,
 #peach-image {
+	margin-bottom: -120px;
 	padding-left: 230px;
 	width: 250px;
 	height: 270px;
 
 }
 
-.flavours-section {
+/*.flavours-section {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
 
 
 }
+ */
 
-
-
+/* This bit of code targets the entire contact form on the contact page. My code here provides the padding sourounding 
+ all elements in the contact form. I chose to use this in order to provide adequete padding around all the elements. */
 .contact-info {
 	padding: 50px;
 
 
 }
 
+.about-us-section,
+.our-team-section {
+	overflow: hidden;
+}
+
 .our-mission-image,
 .our-vision-image {
-	width: 445px;
-	height: 280px;
 	padding: 20px;
 }
 
@@ -334,8 +341,6 @@ nav ul li a:hover {
 .samantha-thompson,
 .micheal-higgins,
 .robert-johnson {
-	width: 445px;
-	height: 280px;
 	padding: 20px;
 }
 
@@ -366,12 +371,15 @@ nav ul li a:hover {
 	width: 100px;
 }
 
-#site-footer {
+/* This bit of code targets the footer. I have chosen to use both flex and text align center in order to properly align the copyright 
+info like in the XD file. */
+footer {
 	text-align: center;
 	display: flex;
 	padding: 15px;
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: 400;
+	background-color: #A0A0A0;
 }
 
 #copyright-line {
