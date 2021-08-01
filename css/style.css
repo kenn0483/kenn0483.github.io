@@ -210,6 +210,8 @@ p {
     padding: 20px;
 }
 
+/* This is the CSS for all the sites images except for the welcome and banner images. I have used a max width of 100% 
+and set the height to auto as a way to make the images responsive. */
 #stop-mute-image,
 #conductor-image,
 #symphony-orchestra-image,
@@ -233,6 +235,8 @@ p {
     padding-bottom: 20px;
 }
 
+/* This css code controls all of the text underneath the images on the home page. I chose to use position absolute and 
+a left value of 160 px so I could position the text over and in the center bottom of each image. */
 #stop-mute-text,
 #conductor-text,
 #symphony-orchestra-text,
@@ -268,6 +272,8 @@ p {
 
 }
 
+/* This is the styling for one of the learn more buttons. This one is styled a bit differently because it is
+aligned to the left of the page where as the buttons on the about page are aligned to the center. */ 
 .learn-more-home {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -295,6 +301,8 @@ p {
 
 }
 
+/* The portfolio-btn-div is the div surrounding the button that takes you to my sites portfolio page. I added this CSS
+in order to add the top and bottom border you see around the button. */
 .portfolio-btn-div {
     border-bottom: 1px solid #707070;
     border-top: 1px solid #707070;
@@ -320,6 +328,7 @@ p {
 
 }
 
+/* This CSS styles the footer. I used flex in footer in order to arrange all of the social media icons horizontally. */
 footer {
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
