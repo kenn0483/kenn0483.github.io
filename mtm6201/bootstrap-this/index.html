@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <title>Bootstrap This!</title>
+</head>
+
+<body>
+  <header class="sticky-top bg-warning pb-0">
+    <h1 class="text-center text-primary bg-danger p-5 fw-bold">Eamonn Kennedy</h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navigation</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-center" aria-current="page" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-center" href="#">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-center" href="#">PORTFOLIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-center" href="#">CONTACT ME</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-primary" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section>
+    <div>
+      <img src="images/welcome-image.jpg" class="rounded mx-auto d-block img-fluid p-3"
+        alt="An image of a welcome sign">
+    </div>
+    <h2 class="p-3 fw-bold">Welcome to my Website</h2>
+    <p class="p-3 pb-1">
+      Hello, my name is Eamonn Kennedy and welcome to my website. On this website, I will be posting images and
+      Other information based upon my interests. My interests include Mountain Biking, playing the French Horn,
+      gazing at stars in the sky, and finally, Photography. I hope you will enjoy my website and have fun learning
+      all about me and what I enjoy doing.
+    </p>
+  </section>
+  <section class="p-3">
+    <h2 class="fw-bold">All About Bootstrap</h2>
+    <h3 class="pt-3 fw-bold">Open Source</h3>
+    <p class="pt-3">The webpage you see here is made using Bootstrap. Bootstrap is a popular open source front-end
+      responsive
+      CSS framework used in the production of websites. Bootstrap takes a mobile first approach. Bootstrap contains a
+      collection of
+      templates for website elements like buttons, cards, a navbar, and more.
+    </p>
+    <h3 class="pt-3 fw-bold">Bootstrap Components library</h3>
+    <p class="pt-3">Bootstrap contains a library of components. These components allow you to easily add elements to
+      your website. Some
+      components include buttons, the navbar, and more.
+    </p>
+    <h3 class="pt-3 fw-bold">Bootstrap Document Creation</h3>
+    <p class="pt-3">In order to use Bootstrap, it is required that you link many external files to a main html document.
+      You will need to add a CSS stylesheet,
+      some custom Bootstrap JavaScript, and a library for popovers called Popper. The HTML5 doctype, and the addition of
+      meta tags are also required.
+    </p>
+    <h2 class="fw-bold">Bootstrap Components</h2>
+    <h3 class="pt-3 fw-bold">Cards</h3>
+    <p class="pt-3">Cards in bootstrap are basically flexible and responsive containers that you can add various
+      content to. Cards can include Headers, footers, buttons, images, and more. Bootstrap grid can be used with cards
+      to help
+      with making the layout responsive.
+    </p>
+    <h3 class="pt-3 fw-bold">Buttons</h3>
+    <p class="pt-3">Bootstrap allows for the creation of custom buttons. Buttons are clickable elements on a webpage
+      that
+      allow you to submit forms, visit links, and more. Bootstraps buttons are similar to regular html
+      buttons with the exception of special bootstrap classes. These buttons can be styled in many different ways.
+      These include, changing the size with .btn-lg or .btn-sm. You can also add outlines, change their states, and
+      more.
+    </p>
+    <h3 class="pt-3 fw-bold">Nav Bar</h3>
+    <p class="pt-3">Bootstrap allows you to easily create fully responsive navbars with drop-down menus which you can
+      add to you website. Navbars contain links that allow you to easily navigate a website. Navbars require a .navbar
+      with a .navbar-expand in order to be allowed to collapse smoothly when
+      in mobile format.
+    </p>
+  </section>
+  <section>
+    <h2 class="fw-bold p-3">Stuff I am interested in</h2>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col p-3">
+        <div class="card p-3">
+          <img src="images/mountain-biking.jpg" class="card-img-top" alt="An image of a mountain biker">
+          <div class="card-body">
+            <h5 class="card-title">Mountain Biking</h5>
+            <p class="card-text">I have been interested in mountain bkiking for the last couple of years.
+              I enjoy biking in Gatineau Park, South March Highlands, and more. Click "Learn More" if you
+              would like to know more.
+            </p>
+            <a href="#" class="btn btn-primary" role="button" data-bs-toggle="button">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col p-3">
+        <div class="card p-3">
+          <img src="images/french-horn.jpg" class="card-img-top" alt="An image of a french horn">
+          <div class="card-body">
+            <h5 class="card-title">French Horn</h5>
+            <p class="card-text">I have been playing the French Horn for nine years, since I was twelve years old.
+              Now, I currently study the horn with Elizabeth Simpson and have most recently played with the Ottawa
+              Pops
+              Orchestra.
+              Click "Learn More" if you would like to know more.
+            </p>
+            <a href="#" class="btn btn-primary" role="button" data-bs-toggle="button">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col p-3">
+        <div class="card p-3">
+          <img src="images/stargazing.jpg" class="card-img-top" alt="An image of people stargazing">
+          <div class="card-body">
+            <h5 class="card-title">Stargazing and astronomy</h5>
+            <p class="card-text">I have enjoyed astronomy and stargazing for the last couple of years. Every
+              once in a whie when it is clear outside, I will go out and look up at the stars. When I go out, I will
+              usually bring
+              out my family telescope. Click "Learn More" if you would like to know more.
+            </p>
+            <a href="#" class="btn btn-primary" role="button" data-bs-toggle="button">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col p-3">
+        <div class="card p-3">
+          <img src="images/camera-photography.jpg" class="card-img-top"
+            alt="An image of a old film camera and some photos">
+          <div class="card-body">
+            <h5 class="card-title">Photography</h5>
+            <p class="card-text">I have started doing Photography for less than a year. I started when I had to
+              purchase
+              a camera for
+              the IMD program at Algonquin College. With my new camera, I have been interested primarily in Wildlife
+              photography, and
+              Astrophotography. Click "Learn More" if you would like to know more.
+            </p>
+            <a href="#" class="btn btn-primary" role="button" data-bs-toggle="button">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  <footer class="bg-warning p-3">
+    <div>
+      <p class="text-center">2021&copy;EamonnKennedy</p>
+    </div>
+  </footer>
+</body>
+
+</html>
