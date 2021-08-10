@@ -207,7 +207,8 @@ p {
 }
 
 #home-banner,
-#about-banner {
+#about-banner,
+#portfolio-banner {
     max-width: 100%;
     height: auto;
 }
@@ -268,6 +269,34 @@ and set the height to auto as a way to make the images responsive. */
 }
 
 #mouthpiece-image {
+    padding-bottom: 20px;
+}
+
+#ottawa-pops-one-image,
+#performance-track-image,
+#domaine-forget-one-image,
+#oyoa-logo-image,
+#oyoa-scolarship-image,
+#nac-superheros-image,
+#uofottawa-image,
+#ottawa-pops-two-image,
+#oyo-image,
+#ojyo-image,
+#hornsection-image,
+#debra-image,
+#playing-horn-image,
+#oyo-right-image,
+#nac-theatre-image,
+#horn-section-two-image,
+#domaine-forget-two-image,
+#eamonn-nac-image,
+#sma-concert-setup-image,
+#oyjo-music-fest-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    padding-left: 20px;
+    padding-right: 20px;
     padding-bottom: 20px;
 }
 
