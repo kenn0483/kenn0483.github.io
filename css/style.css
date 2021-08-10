@@ -136,6 +136,16 @@ table {
 
 /*********** MY OWN CSS STARTS HERE!!! **********/
 
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
 /*body {
 }
 
@@ -207,21 +217,22 @@ by setting a border radius of 50% on a square. Unlike with the solid dots, I set
 the background color property to just color to make the dots hollow.*/
 .dot {
     padding: 3px;
-    height: 18px;
-    width: 18px;
+    height: 30px;
+    width: 30px;
     color: #FBC226;
     border-radius: 50%;
     border-style: solid;
     border-width: 3px;
     display: inline-block;
+
 }
 
 /* This is the CSS for the solid yellow dots at the bottom of the website banner images. I created these dots 
 by setting a border radius of 50% on a square. */
 .dot-solid {
     padding: 3px;
-    height: 25px;
-    width: 25px;
+    height: 30px;
+    width: 30px;
     background-color: #FBC226;
     border-radius: 50%;
     display: inline-block;
@@ -335,14 +346,24 @@ in order to add the top and bottom border you see around the button. */
 }
 
 .instagram-icon,
-.twitter-icon,
 .facebook-icon {
     width: 56px;
     height: 56px;
-    padding: 20px;
+    padding: 5px;
+    margin: 20px;
     position: relative;
     bottom: -40%;
-    right: 20%;
+    right: 90%;
+}
+
+.twitter-icon {
+    width: 68px;
+    height: 56px;
+    padding: 5px;
+    margin: 20px;
+    position: relative;
+    bottom: -40%;
+    right: 75%;
 }
 
 #copyright-line {
