@@ -239,12 +239,35 @@ by setting a border radius of 50% on a square. */
     display: inline-block;
 }
 
+.center-dot {
+    text-align: center;
+    /* May get rid of or change */
+    position: absolute;
+    top: 610px;
+    left: 180px;
+}
+
 #welcome-image {
     max-width: 100%;
     height: auto;
     width: 100%;
     margin-top: 0;
     padding: 20px;
+}
+
+.what-i-do-section div {
+    position: relative;
+}
+
+.what-i-do-section div p {
+    position: absolute;
+    margin-left: 0;
+    margin-right: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    bottom: 20px;
+    /* change distance from the bottom of the picture */
 }
 
 /* This is the CSS for all the sites images except for the welcome and banner images. I have used a max width of 100% 
@@ -300,6 +323,34 @@ and set the height to auto as a way to make the images responsive. */
     padding-bottom: 20px;
 }
 
+.h2-portfolio {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+#ottawa-pops-one-text,
+#performance-track-text,
+#domaine-forget-one-text,
+#oyoa-logo-text,
+#oyoa-scolarship-text,
+#nac-superheros-text,
+#uofottawa-text,
+#ottawa-pops-two-text,
+#oyo-text,
+#ojyo-text,
+#hornsection-text,
+#debra-text {
+    text-align: center;
+    color: #880000;
+    font-family: Arial, 'Helvetica', sans-serif;
+    padding-top: 10px;
+    padding-bottom: 30px;
+
+}
+
 /* This css code controls all of the text underneath the images on the home page. I chose to use position absolute and 
 a left value of 160 px so I could position the text over and in the center bottom of each image. */
 #stop-mute-text,
@@ -309,9 +360,9 @@ a left value of 160 px so I could position the text over and in the center botto
 #holton-h179-text,
 #case-text,
 #mouthpiece-text {
-    position: absolute;
-    display: inline;
-    left: 160px;
+    /*position: absolute;*/
+    /*display: inline;
+    left: 160px;*/
     font-family: Arial, 'Helvetica', sans-serif;
     font-weight: 300;
     color: #880000;
@@ -356,7 +407,6 @@ aligned to the left of the page where as the buttons on the about page are align
 .portfolio-button {
     font-weight: bold;
     padding: 13px;
-    margin-left: 145px;
     width: 200px;
     background-color: #FBA126;
     border-style: none;
@@ -369,6 +419,8 @@ aligned to the left of the page where as the buttons on the about page are align
 /* The portfolio-btn-div is the div surrounding the button that takes you to my sites portfolio page. I added this CSS
 in order to add the top and bottom border you see around the button. */
 .portfolio-btn-div {
+    display: flex;
+    justify-content: center;
     border-bottom: 1px solid #707070;
     border-top: 1px solid #707070;
     padding: 20px;
@@ -380,9 +432,7 @@ in order to add the top and bottom border you see around the button. */
     height: 56px;
     padding: 5px;
     margin: 20px;
-    position: relative;
-    bottom: -40%;
-    right: 90%;
+
 }
 
 .twitter-icon {
@@ -390,9 +440,6 @@ in order to add the top and bottom border you see around the button. */
     height: 56px;
     padding: 5px;
     margin: 20px;
-    position: relative;
-    bottom: -40%;
-    right: 75%;
 }
 
 #copyright-line {
@@ -403,13 +450,22 @@ in order to add the top and bottom border you see around the button. */
 
 }
 
+.copyright-div {
+    padding-top: 25px;
+
+}
+
 /* This CSS styles the footer. I used flex in footer in order to arrange all of the social media icons horizontally. */
 footer {
-    display: flex;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #FBC226;
     height: 200px;
     /* May change from auto */
     width: auto;
 
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
 }
