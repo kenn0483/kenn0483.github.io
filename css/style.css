@@ -424,6 +424,7 @@ in order to add the top and bottom border you see around the button. */
     border-bottom: 1px solid #707070;
     border-top: 1px solid #707070;
     padding: 20px;
+
 }
 
 .instagram-icon,
@@ -460,7 +461,6 @@ footer {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #FBC226;
     height: 200px;
-    /* May change from auto */
     width: auto;
 
 }
@@ -468,4 +468,107 @@ footer {
 .social-media {
     display: flex;
     justify-content: center;
+}
+
+/* This is a media query. This media query is set to a minimum page width of 850px or more. I have decided to use this media query
+as a way for my sites layout to transition from tablet to desktop when the browser width is at least 850px. */
+
+
+@media screen and (min-width: 850px) {
+    .welcome-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .what-i-do-section {
+        display: grid;
+        padding-bottom: 20px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: masonry;
+        grid-template-areas:
+            "stop-mute symphony-orchestra symphony-orchestra "
+            "conductor classical-music case"
+            "conductor holton-h179 mouthpiece";
+    }
+
+    .stop-mute {
+        grid-area: stop-mute;
+    }
+
+    .symphony-orchestra {
+        grid-area: symphony-orchestra;
+    }
+
+    .conductor {
+        grid-area: conductor;
+    }
+
+    .classical-music {
+        grid-area: classical-music;
+
+    }
+
+    .case {
+        grid-area: case;
+
+    }
+
+    .holton-h179 {
+        grid-area: holton-h179;
+
+    }
+
+    .mouthpiece {
+        grid-area: mouthpiece;
+
+    }
+
+    .portfolio-btn-div {
+        display: flex;
+        justify-content: center;
+        border-bottom: 1px solid #707070;
+        border-top: 1px solid #707070;
+        padding: 20px;
+        margin-bottom: 40px;
+
+    }
+
+    .ensembles-section,
+    .teachers-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .portfolio-section-one {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+    .image-gallery-section {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .page-links {
+        display: flex;
+        padding: 20px;
+        justify-content: space-around;
+
+    }
+
+    .website-logo-div {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .website-logo {
+        width: 180px;
+        height: 150px;
+
+    }
+
+
 }
