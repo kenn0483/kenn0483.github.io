@@ -484,7 +484,7 @@ as a way for my sites layout to transition from tablet to desktop when the brows
         display: grid;
         padding-bottom: 20px;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: masonry;
+        grid-template-rows: repeat(3, 1fr);
         grid-template-areas:
             "stop-mute symphony-orchestra symphony-orchestra "
             "conductor classical-music case"
